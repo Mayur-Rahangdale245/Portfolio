@@ -7,34 +7,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary-color: #4f46e5;
-      --bg-color: #f4f4f4;
-      --text-color: #333;
-      --card-bg: white;
-      --shadow: rgba(0, 0, 0, 0.1);
+      --primary: #6366f1;
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text: #f1f5f9;
+      --accent: #38bdf8;
+      --shadow: rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: var(--bg-color);
-      color: var(--text-color);
+      background: var(--bg-dark);
+      color: var(--text);
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      background: linear-gradient(135deg, #4f46e5, #38bdf8);
       color: white;
-      padding: 3rem 1rem;
       text-align: center;
-      border-bottom-left-radius: 50px;
-      border-bottom-right-radius: 50px;
+      padding: 3rem 1rem;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      box-shadow: 0 8px 20px var(--shadow);
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
     }
 
     main {
@@ -44,16 +54,21 @@
     }
 
     section {
-      background: var(--card-bg);
+      background: var(--bg-card);
       margin-bottom: 2rem;
       padding: 1.5rem;
       border-radius: 16px;
-      box-shadow: 0 4px 8px var(--shadow);
+      box-shadow: 0 4px 12px var(--shadow);
+      transition: transform 0.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
     }
 
     h2 {
-      margin-top: 0;
-      color: var(--primary-color);
+      color: var(--accent);
+      margin-bottom: 1rem;
     }
 
     ul {
@@ -61,22 +76,23 @@
     }
 
     a {
-      color: var(--primary-color);
+      color: var(--accent);
       text-decoration: none;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background: #e0e7ff;
-      color: #555;
+      background: #1e293b;
+      color: #ccc;
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
     }
   </style>
@@ -85,33 +101,33 @@
 
 <header>
   <h1>Mayur Rahangdale</h1>
-  <p>Aspiring Developer | DSA • AI/ML • Full Stack Web</p>
+  <p>Aspiring Developer | DSA • AI/ML • Full Stack</p>
 </header>
 
 <main>
   <section>
-    <h2>🧑‍💻 About Me</h2>
+    <h2>🧠 About Me</h2>
     <p>
-      I’m currently exploring Data Structures & Algorithms, Artificial Intelligence / Machine Learning,
-      and Full Stack Web Development. I enjoy working with platforms like Replit, VS Code, and AI-based tools.
+      I’m currently learning Data Structures & Algorithms, AI/ML, and Full Stack Web Development.
+      I love building with tools like Replit, VS Code, and exploring new AI tools.
     </p>
   </section>
 
   <section>
-    <h2>🛠️ Skills</h2>
+    <h2>🔧 Skills</h2>
     <ul>
-      <li>Data Structures & Algorithms (Learning)</li>
-      <li>AI/ML Fundamentals</li>
-      <li>Full Stack Development</li>
-      <li>Replit, VS Code, AI Tools</li>
+      <li>Data Structures & Algorithms</li>
+      <li>Basics of AI/ML</li>
+      <li>Frontend & Backend Development</li>
+      <li>VS Code, Replit, AI Tools</li>
     </ul>
   </section>
 
   <section>
-    <h2>📂 Project: Jarvis Assistant</h2>
+    <h2>🤖 Project: Jarvis Assistant</h2>
     <p>
-      A personal assistant inspired by Jarvis, currently in development. It includes planned features like voice interaction,
-      task automation, and AI-driven responses.
+      A personal assistant project (in progress) inspired by Jarvis from Iron Man. Includes plans for voice control,
+      automation, and intelligent responses using AI.
     </p>
   </section>
 
@@ -122,8 +138,8 @@
 </main>
 
 <footer>
-  &copy; 2025 Mayur Rahangdal
+  &copy; 2025 Mayur Rahangdale 
 </footer>
 
 </body>
-</html>
+  </html>

@@ -4,43 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mayur Rahangdale | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary-color: #4f46e5;
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --card-bg: white;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
     }
+
     header {
-      background: #4f46e5;
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
     section {
+      background: var(--card-bg);
       margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px var(--shadow);
     }
-    h1, h2 {
-      margin-bottom: 1rem;
+
+    h2 {
+      margin-top: 0;
+      color: var(--primary-color);
     }
+
     ul {
       padding-left: 1.2rem;
     }
+
     a {
-      color: #4f46e5;
+      color: var(--primary-color);
       text-decoration: none;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background: #e5e7eb;
+      background: #e0e7ff;
       color: #555;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
@@ -48,44 +85,45 @@
 
 <header>
   <h1>Mayur Rahangdale</h1>
-  <p>Aspiring Developer | Learning DSA, AI/ML & Full Stack Development</p>
+  <p>Aspiring Developer | DSA • AI/ML • Full Stack Web</p>
 </header>
 
 <main>
   <section>
-    <h2>About Me</h2>
+    <h2>🧑‍💻 About Me</h2>
     <p>
-      I'm currently gaining knowledge in Data Structures & Algorithms (DSA), Artificial Intelligence / Machine Learning, 
-      and Full Stack Web Development. I love working with tools like Replit, VS Code, and experimenting with AI tools.
+      I’m currently exploring Data Structures & Algorithms, Artificial Intelligence / Machine Learning,
+      and Full Stack Web Development. I enjoy working with platforms like Replit, VS Code, and AI-based tools.
     </p>
   </section>
 
   <section>
-    <h2>Skills</h2>
+    <h2>🛠️ Skills</h2>
     <ul>
-      <li>DSA (in progress)</li>
-      <li>AI/ML (beginner)</li>
-      <li>Full Stack Web Development (learning)</li>
-      <li>Replit, VS Code, AI tools</li>
+      <li>Data Structures & Algorithms (Learning)</li>
+      <li>AI/ML Fundamentals</li>
+      <li>Full Stack Development</li>
+      <li>Replit, VS Code, AI Tools</li>
     </ul>
   </section>
 
   <section>
-    <h2>Project: Jarvis (In Progress)</h2>
+    <h2>📂 Project: Jarvis Assistant</h2>
     <p>
-      A personal assistant project inspired by Jarvis. Still in development. Will include voice commands, automation, and AI-driven features.
+      A personal assistant inspired by Jarvis, currently in development. It includes planned features like voice interaction,
+      task automation, and AI-driven responses.
     </p>
   </section>
 
   <section>
-    <h2>Contact</h2>
+    <h2>📫 Contact</h2>
     <p>Email: <a href="mailto:mayurahangdale145@gmail.com">mayurahangdale145@gmail.com</a></p>
   </section>
 </main>
 
 <footer>
-  &copy; 2025 Mayur Rahangdale
+  &copy; 2025 Mayur Rahangdal
 </footer>
 
 </body>
-    </html>
+</html>

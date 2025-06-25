@@ -1,63 +1,38 @@
+import React from "react";
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Mayur Rahangdale | Portfolio</title>
-  <style>
-    body {
-      background-color: #0f0f0f;
-      color: #00ff88;
-      font-family: 'Courier New', Courier, monospace;
-      margin: 0;
-      padding: 20px;
-    }
-    h1, h2 {
-      color: #00ff88;
-    }
-    a {
-      color: #00ccff;
-      text-decoration: none;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    hr {
-      border: 1px dashed #00ff88;
-    }
-  </style>
-</head>
-<body>
-  <h1>> Mayur Rahangdale</h1>
-  <p>// Tech enthusiast | AIML | Full-Stack | DSA</p>
-  <hr>
+export default function Portfolio() { return ( <div className="min-h-screen bg-gray-100 text-gray-800 p-6"> <header className="text-center mb-10"> <h1 className="text-4xl font-bold text-indigo-600">Mayur Rahangdale</h1> <p className="text-lg mt-2">Aspiring Developer | Exploring DSA, AI/ML & Full Stack Development</p> </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am currently learning Data Structures, AI/ML, and Full Stack Web Development. I often use tools like Replit, VS Code, and explore various AI platforms. I'm passionate about building cool tech — like my personal assistant project "Jarvis" (work in progress).</p>
+<section className="mb-10">
+    <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+    <p>
+      I'm currently learning Data Structures & Algorithms, Artificial Intelligence / Machine Learning,
+      and Full Stack Web Development. I enjoy experimenting with tools like Replit, VS Code,
+      and various AI technologies to build practical applications.
+    </p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, JavaScript, HTML, CSS</li>
+  <section className="mb-10">
+    <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+    <ul className="list-disc list-inside">
       <li>DSA (in progress)</li>
-      <li>AI & ML (learning phase)</li>
-      <li>Full Stack Web Development (learning phase)</li>
-      <li>Tools: Replit, VS Code, GitHub, AI Tools</li>
+      <li>AI/ML (beginner)</li>
+      <li>Full Stack Web Development (learning)</li>
+      <li>Replit, VS Code, AI tools</li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <h3>1. Jarvis – Personal Assistant (In Progress)</h3>
-    <p>A voice-based personal assistant developed in Python with basic command features. Currently working on adding AI-based improvements and automation tasks.</p>
+  <section className="mb-10">
+    <h2 className="text-2xl font-semibold mb-4">Project: Jarvis (In Progress)</h2>
+    <p>
+      A personal assistant project inspired by Jarvis. Currently under development. Intended features include
+      voice commands, web automation, and simple AI-driven tasks.
+    </p>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:mayurahangdale145@gmail.com">mayurahangdale145@gmail.com</a></p>
+  <section>
+    <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+    <p>Email: <a className="text-indigo-600 underline" href="mailto:mayurahangdale145@gmail.com">mayurahangdale145@gmail.com</a></p>
   </section>
+</div>
 
-</body>
-</html>
+); }
